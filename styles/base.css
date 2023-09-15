@@ -93,5 +93,5 @@ footer p {
 	font-size: large;
 }
 p:nth-of-type(2) {
-	color: var(--secondary-color);
+	color: #EF27A6;
 }
