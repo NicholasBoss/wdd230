@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&display=swap");
 
 :root {
-	--primary-color: #FFE066;
+	--primary-color: #ffe066;
 	--secondary-color: #124559;
 	--accent-color1: black;
-	--accent-color2: #00A1E4;
+	--accent-color2: blue;
 
 	--heading-font: "Dancing Script";
 	--paragraph-font: "EB Garamond";
@@ -13,11 +13,13 @@
 body {
 	margin: 0;
 	padding: 0;
-    font-family: var(--paragraph-font);
+	font-family: var(--paragraph-font);
 }
 
-h1, h2, h3 {
-    font-family: var(--heading-font);
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
 }
 
 header {
