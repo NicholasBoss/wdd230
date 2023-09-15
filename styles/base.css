@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&display=swap");
 
 :root {
-	--primary-color: gold;
-	--secondary-color: grey;
-	--accent-color1: black;
-	--accent-color2: blue;
+	--primary-color: #FFE066;
+	--secondary-color: #124559;
+	--accent-color1: #01161E;
+	--accent-color2: #00A1E4;
 
 	--heading-font: "Dancing Script";
 	--paragraph-font: "EB Garamond";
