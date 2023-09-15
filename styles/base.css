@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&display=swap");
+
+:root {
+	--primary-color: gold;
+	--secondary-color: grey;
+	--accent-color1: black;
+	--accent-color2: blue;
+
+	--heading-font: "Dancing Script";
+	--paragraph-font: "EB Garamond";
+}
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-items: center;
+}
+
+header img {
+	width: 30%;
+	padding: 10%;
+}
+
+header h1 {
+	align-self: center;
+}
+
+nav {
+	background-color: var(--secondary-color);
+}
+
+nav a {
+	color: var(--accent-color);
+	display: block;
+	text-align: center;
+	padding: 2%;
+}
+
+nav a:hover {
+	color: var(--primary-color);
+	background-color: var(--accent-color1);
+}
+
+h2 {
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.card {
+	text-align: center;
+	border: 2px solid black;
+	max-width: 30%;
+	margin-left: 35%;
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.card h3 {
+	background-color: var(--primary-color);
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.card ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.card ul li a {
+	color: var(--accent-color2);
+}
+
+footer {
+	text-align: center;
+	background-color: var(--primary-color);
+	padding: 3%;
+}
+
+footer p {
+	display: block;
+	line-height: 2em;
+	font-size: large;
+}
+p:nth-of-type(2) {
+	color: var(--secondary-color);
+}
