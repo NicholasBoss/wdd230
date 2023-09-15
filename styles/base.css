@@ -3,7 +3,7 @@
 :root {
 	--primary-color: #FFE066;
 	--secondary-color: #124559;
-	--accent-color1: #01161E;
+	--accent-color1: black;
 	--accent-color2: #00A1E4;
 
 	--heading-font: "Dancing Script";
@@ -37,7 +37,7 @@ header h1 {
 }
 
 nav {
-	background-color: var(--secondary-color);
+	background-color: grey;
 }
 
 nav a {
@@ -91,7 +91,4 @@ footer p {
 	display: block;
 	line-height: 2em;
 	font-size: large;
-}
-p:nth-of-type(2) {
-	color: #EF27A6;
 }
