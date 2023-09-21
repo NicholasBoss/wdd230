@@ -1,0 +1,31 @@
+@media screen and (min-width: 900px) {
+    nav {
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main h2 {
+        border-bottom: none;
+    }
+
+    .card {
+        margin: 0 60px;
+        margin-bottom: 2%;
+    }
+
+    .l-activities {
+        grid-row: 2;
+    }
+
+    .information {
+        grid-row: 2;
+        /* grid-column: 2; */
+    }
+
+    footer p:nth-of-type(1) {
+        
+    }
+}
