@@ -42,13 +42,13 @@ header h1 {
 }
 
 nav {
-	background-color: grey;
+	background-color: rgb(54, 212, 240);
 	display: flex;
 	flex-direction: column;
 }
 
 nav a {
-	color: var(--accent-color);
+	color: var(--accent-color1);
 	text-align: center;
 	padding: 2rem;
     text-decoration: none;
