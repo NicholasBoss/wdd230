@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&display=swap");
+
+:root {
+	--primary-color: #ffe066;
+	--secondary-color: #124559;
+    --tertiary-color: #FFFDD0;
+	--accent-color1: black;
+	--accent-color2: blue;
+    --accent-color3: rgb(54, 212, 240);
+
+	--heading-font: "Dancing Script";
+	--paragraph-font: "EB Garamond";
+}
+
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    /* text-align: center; */
+    font-family: var(--paragraph-font);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: var(--tertiary-color);
+    margin: 1rem auto;
+    border: 1px solid var(--accent-color1);
+    border-radius: 3%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+section h2, section p, section h3{
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+}
+
+
+a {
+    text-align: left;
+    padding: 1rem;
+}
+
+
+img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
