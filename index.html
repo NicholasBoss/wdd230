@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="favicon.ico">
 		<title>Nicholas Boss - WDD 230 - Web Frontend Development</title>
 		<script src="scripts/getdates.js" defer></script>
-
+		<script src="scripts/hamburger-menu.js" defer></script>
 
 	</head>
 	<body>
@@ -24,8 +24,9 @@
 			<img src="./images/nicholasboss.jpg" alt="photo of Nicholas Boss">
 			<h1>Nicholas Boss</h1>
 		</header>
-		<nav>
-			<a href="#">Home</a>
+		<button class="ham-hide">X</button><button class="menu-show showing">&equiv;</button>
+		<nav id="main-nav">
+			<a class="active" href="#">Home</a>
 			<a href="chamber/siteplan.html">Site Plan</a>
 			<a href="chamber/">Chamber</a>
 			<a href="https://byui.edu" target="_blank">BYU-Idaho</a>
@@ -43,7 +44,7 @@
 					<li>02 <a href="./lesson02/design.html">Design Exercise</a> |
                            <a href="./lesson2/design-principles.html">Design Principles</a>
                     </li>
-					<li>03 <a href="./images/css_combinators.jpg">CSS Combinators</a> |
+					<li>03 <a href="https://codepen.io/NicholasBoss/pen/BavxpKP">Responsive Code Pen</a> |
 						   <a href="https://codepen.io/NicholasBoss/pen/qBLYqod">CSS Pseudo Pen</a>
                     
                     </li>
@@ -73,6 +74,7 @@
 			<section class="card information">
 				<h3>Information</h3>
 			</section>
+			<iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24073.108968117525!2d-111.70231419671262!3d41.04409758338391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87525289d640ba5d%3A0xa6ea814c92af3abd!2sMorgan%2C%20UT%2084050!5e0!3m2!1sen!2sus!4v1695764219542!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</main>
 		<footer>
 			<p>&copy;<span id="currentyear"></span> - Nicholas Boss - United States</p>
