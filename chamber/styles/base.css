@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap');
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #87F1FF   ;
+    --secondary-color: #D5A021 ;
+    --accent1-color: #FB62F6;
+    --accent2-color: beige;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Dancing Script", sans-serif;
+    --paragraph-font: "EB Garamond", Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94;
+    --paragraph-background-color-alt: beige;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D5A021;
+    --nav-hover-link-color: #FB62F6;
+    --nav-hover-background-color: #396E94;
+  }
+
+body {
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    max-width: 900px;
+    text-align: center;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+}
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-items: center;
+	padding: 0.5rem;
+}
+
+header img {
+	width: 5rem;
+	padding: 1rem;
+}
+
+nav {
+	background-color: var(--accent-color3);
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+}
+
+nav a {
+	color: var(--accent-color1);
+	text-align: center;
+	padding: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+.active {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+#ham {
+    
+    top: 1rem;
+    right:1rem;
+}
+
+.ham-hide, .menu-show {
+	display: none;
+	background-color: lightblue;
+	border: 1px solid grey;
+	margin: 2.7rem 0;
+}
+
+.ham-hide.showing, .menu-show.showing{
+	display: block;
+}
+
+#main-nav{
+	display: none;
+}
+
+#main-nav.showing{
+	display: flex;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.main-info{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 1%;
+    margin-bottom: 2%;
+}
+
+.card h2, .card h3{
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+footer{
+    border: 1px solid black;
+}

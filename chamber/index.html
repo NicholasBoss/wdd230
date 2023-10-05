@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The one stop shop for all business owners in the land of Fairnith.">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="Fairnith Chamber of Commerce">
+    <meta property="og:description" content="The one stop shop for all business owners in the land of Fairnith.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/fairnithlogo.png">
+    <meta property="og:url" content="https://nicholasboss.github.io/wdd230/chamber">
+    <link rel="shortcut icon" href="../images/fcocwfavicon.ico" type="image/x-icon">
+    <title>Fairnith Chamber of Commerce</title>
+    <script src="../scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <script src="../scripts/hamburger-menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img id="logo" src="./images/fairnithlogo.png" alt="Fairnith Chamber of Commerce Logo">
+        </a>
+        <button id="ham" class="ham-hide">X</button><button class="menu-show showing">&equiv;</button>
+        <nav id="main-nav">
+            <a id="active" href="#">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <img id="hero-img" src="./images/hero.png" alt="Image of Fairnith Town Square">
+        <button>
+            <a href="join.html">JOIN NOW</a>
+        </button>
+    </section>
+    <main id="home-main">
+        <section class="main-info">
+            <section class="card events">
+                <h2>Chamber Opening Social</h2>
+                <p>Dec 21, 2023</p>
+            </section>
+            <section class="card weather">
+                <h2>Weather</h2>
+                <p>Cloudy with a chance of rain</p>
+            </section>
+        </section>
+        <section class="company">
+            <h2>Company Spotlights</h2>
+            <section class="card blacksmith">
+                <h3>The Dragon Blacksmith</h3>
+                <!-- https://placehold.co/1200x400 -->
+                <img src="https://placehold.co/200x200" alt="placeholder image">
+            </section>
+            <section class="card inn">
+                <h3>The Mystic Inn</h3>
+                <img src="https://placehold.co/200x200" alt="placeholder image">
+            </section>
+            <section class="card tavern">
+                <h3>Elendil's Tavern</h3>
+                <img src="https://placehold.co/200x200" alt="placeholder image">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Fairnith Chamber of Commerce - &copy;<span id="currentyear"></span></p>
+        <p>Located at the end of [street]</p>
+        <p>
+            <img src="https://placehold.co/50x50" alt="social media placeholder image">
+            <img src="https://placehold.co/50x50" alt="social media placeholder image">
+        </p>
+        <p>Nicholas Boss - WDD 230</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
