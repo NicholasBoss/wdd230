@@ -40,7 +40,7 @@ h3 {
 header {
 	background-color: var(--primary-color);
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 	justify-items: center;
 	padding: 0.5rem;
 }
@@ -89,6 +89,7 @@ nav a:hover {
 
 .ham-hide.showing, .menu-show.showing{
 	display: block;
+    text-align: right;
 }
 
 #main-nav{
@@ -97,6 +98,7 @@ nav a:hover {
 
 #main-nav.showing{
 	display: flex;
+    grid-column: 2;
 }
 
 #hero-img {
