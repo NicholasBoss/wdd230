@@ -15,6 +15,11 @@
     #main-nav {
         display: flex;
     }
+
+    #main-nav.showing{
+        grid-row: 1;
+        grid-column: 3;
+    }
     .main-info, .company{
         display: grid;
         grid-template-columns: 1fr 1fr;
