@@ -1,42 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap");
 :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #87F1FF   ;
-    --secondary-color: #D5A021 ;
-    --accent1-color: #841d8c;
-    --accent2-color: beige;
-    --accent3-color: black;
-  
-    /* change the values below to your chosen font(s) */
-    --heading-font: "Dancing Script", sans-serif;
-    --paragraph-font: "EB Garamond", Helvetica, sans-serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-    --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #396E94;
-    --paragraph-background-color-alt: beige;
-    --nav-link-color: #396E94;
-    --nav-background-color: var(--secondary-color);
-    --nav-hover-link-color: var(--accent1-color);
-    --nav-hover-background-color: var(--primary-color);
-  }
+	/* change the values below to your colors from your palette */
+	--primary-color: #87f1ff;
+	--secondary-color: #d5a021;
+	--accent1-color: #841d8c;
+	--accent2-color: beige;
+	--accent3-color: black;
+    --border-color: #d5a021;
+    --ham-color: #d5a021;
+
+	/* change the values below to your chosen font(s) */
+	--heading-font: "Dancing Script", sans-serif;
+	--paragraph-font: "EB Garamond", Helvetica, sans-serif;
+
+	/* these colors below should be chosen from among your palette colors above */
+	--headline-color-on-white: #396e94; /* headlines on a white background */
+	--headline-color-on-color: white; /* headlines on a colored background */
+	--paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+	--paragraph-color-on-color: white; /* paragraph text on a colored background */
+	--paragraph-background-color: #396e94;
+	--paragraph-background-color-alt: beige;
+	--nav-link-color: #396e94;
+	--nav-background-color: var(--secondary-color);
+	--nav-hover-link-color: var(--accent1-color);
+	--nav-hover-background-color: var(--primary-color);
+}
 
 body {
-    margin: 0 auto;
-    font-family: var(--paragraph-font);
-    max-width: 1000px;
-    text-align: center;
+	margin: 0 auto;
+	font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+	max-width: 1000px;
+	text-align: center;
 	box-sizing: border-box;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 h1,
 h2,
 h3 {
 	font-family: var(--heading-font);
+	color: var(--accent3-color);
 }
 
 header {
@@ -48,14 +52,14 @@ header {
 }
 
 #logo {
-    margin-top: 15%;
-    width: 10em;
+	margin-top: 15%;
+	width: 10em;
 }
 
 #mode {
 	position: absolute;
 	top: 4rem;
-	right: .5rem;
+	right: 0.5rem;
 	font-size: 3rem;
 	cursor: pointer;
 }
@@ -64,21 +68,22 @@ nav {
 	background-color: var(--nav-background-color);
 	display: flex;
 	flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 nav a {
 	color: var(--accent3-color);
 	text-align: center;
 	padding: 2rem;
-    text-decoration: none;
+	text-decoration: none;
 }
 
-.navigation li a:hover, #active:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    font-weight: 700;
+.navigation li a:hover,
+#active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
 }
 
 #active {
@@ -88,11 +93,11 @@ nav a {
 
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	padding: 3px 7px 6px;
-	background-color: var(--secondary-color);
+	background-color: var(--ham-color);
 	color: #000;
- 	position: absolute;
+	position: absolute;
 	top: 1rem;
 	right: 1rem;
 }
@@ -125,7 +130,7 @@ nav a {
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li:first-of-type {
-    margin-top: 30px;
+	margin-top: 90px;
 }
 .open li {
 	display: block;
@@ -136,64 +141,69 @@ nav a {
 }
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
 }
 
 #hero-img {
-    width: 100%;
-    grid-column: 1/4;
-    grid-row: 1;
-    position: relative;
+	width: 100%;
+	grid-column: 1/4;
+	grid-row: 1;
+	position: relative;
 }
 
 .button {
-    background-color: var(--nav-background-color);
-    color: var(--nav-link-color);
-    grid-row: 1;
-    grid-column: 2/3;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 15px;
-    border-radius: 5px;
+	background-color: var(--nav-background-color);
+	color: var(--nav-link-color);
+	grid-row: 1;
+	grid-column: 2/3;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	padding: 15px;
+	border-radius: 5px;
 }
 .button:hover {
-    background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
 }
 
 .join {
-    padding: 15px;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.join:hover {
+	color: var(--nav-hover-link-color);
+	font-weight: 600;
+}
+
+.main-info {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.card h2,
+.card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+.contact a{
     text-decoration: none;
 }
 
-.join:hover{
-    color: var(--nav-hover-link-color);
-    font-weight: 600;
-}
-
-.main-info{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.card{
-    border: 4px solid var(--secondary-color);
-    border-radius: 1%;
-    margin-bottom: 2%;
-}
-
-.card h2, .card h3{
-    background-color: var(--primary-color);
-    margin: 0;
-}
-
-footer{
-    background-color: var(--secondary-color);
-    border: 1px solid black;
+footer {
+	background-color: var(--secondary-color);
+	border: 1px solid black;
 }
 
 footer a {
-    text-decoration: none;
+	text-decoration: none;
 }
