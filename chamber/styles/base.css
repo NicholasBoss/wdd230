@@ -47,14 +47,9 @@ header {
 	padding: 0.5rem;
 }
 
-#logo_link {
-    text-align: center;
-    margin-top: 10px;
-}
 #logo {
-    margin-top: 20%;
+    margin-top: 15%;
     width: 10em;
-    /* border-radius: 50%; */
 }
 
 nav {
