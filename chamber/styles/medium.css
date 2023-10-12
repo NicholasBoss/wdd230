@@ -8,18 +8,19 @@
         flex-direction: row;
     }
 
-    .menu-show, .ham-hide, .menu-show.showing, .ham-hide.showing {
+    #menu{
         display: none;
     }
 
-    #main-nav {
-        display: flex;
-    }
+    .navigation {
+		flex-direction: row;
+	}
 
-    #main-nav.showing{
-        grid-row: 1;
-        grid-column: 3;
-    }
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+    
     .main-info, .company{
         display: grid;
         grid-template-columns: 1fr 1fr;

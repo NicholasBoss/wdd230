@@ -69,6 +69,7 @@ nav a {
 nav a:hover, #active:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    font-weight: 700;
 }
 
 #active {
@@ -76,31 +77,23 @@ nav a:hover, #active:hover {
 	background-color: var(--primary-color);
 }
 
-#ham {
-    
-    top: 1rem;
-    right:1rem;
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: var(--secondary-color);
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
 }
 
-.ham-hide, .menu-show {
-	display: none;
-	background-color: lightblue;
-	border: 1px solid grey;
-	margin: 2.7rem 0;
+#menu::before {
+	content: "☰";
 }
 
-.ham-hide.showing, .menu-show.showing{
-	display: block;
-    text-align: right;
-}
-
-#main-nav{
-	display: none;
-}
-
-#main-nav.showing{
-	display: flex;
-    grid-column: 2;
+#menu.open::before {
+	content: "X";
 }
 
 #hero-img {
