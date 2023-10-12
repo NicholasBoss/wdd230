@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <script src="../scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,6 +26,9 @@
             <img id="logo" src="./images/logosmall.png" alt="Fairnith Chamber of Commerce Logo">
         </a>
         <h1>Fairnith Chamber of Commerce</h1>
+        <div id="mode">
+            🕶️
+        </div>
         <button id="menu"></button>
         <nav id="main-nav">
             <ul class="navigation">
@@ -46,19 +50,19 @@
     <div id="hero">
         <img id="hero-img" src="./images/fairnithhero.jpg" alt="Image of Fairnith Town Square">
         <div class="button">
-            <a href="join.html">JOIN NOW</a>
+            <a class="join" href="join.html">JOIN NOW</a>
         </div>
     </div>
     <main id="home-main">
         <div class="main-info">
             <section class="card events">
-                <h2>Events</h2>
+                <h3>Events</h3>
                 <h4>Chamber Opening Social</h4>
                 <p>Dec 21, 2023</p>
                 <p>Come join us to commemorate the establishment of the new Chamber of Commerce</p>
             </section>
             <section class="card weather">
-                <h2>Weather</h2>
+                <h3>Weather</h3>
                 <p>Cloudy with a chance of rain</p>
             </section>
         </div>

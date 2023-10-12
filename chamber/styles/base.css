@@ -52,6 +52,14 @@ header {
     width: 10em;
 }
 
+#mode {
+	position: absolute;
+	top: 4rem;
+	right: .5rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
 nav {
 	background-color: var(--nav-background-color);
 	display: flex;
@@ -127,8 +135,42 @@ nav a {
 	display: block;
 }
 
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
 #hero-img {
     width: 100%;
+    grid-column: 1/4;
+    grid-row: 1;
+    position: relative;
+}
+
+.button {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    grid-row: 1;
+    grid-column: 2/3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+.join {
+    padding: 15px;
+    text-decoration: none;
+}
+
+.join:hover{
+    color: var(--nav-hover-link-color);
+    font-weight: 600;
 }
 
 .main-info{
