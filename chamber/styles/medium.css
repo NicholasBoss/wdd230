@@ -4,15 +4,12 @@
         max-width: 100%;
     }
 
-    nav {
-        flex-direction: row;
-    }
-
     #menu{
         display: none;
     }
 
     .navigation {
+        display: flex;
 		flex-direction: row;
 	}
 
