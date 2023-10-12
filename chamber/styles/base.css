@@ -30,6 +30,7 @@ body {
     max-width: 1000px;
     text-align: center;
 	box-sizing: border-box;
+    font-size: 20px;
 }
 
 h1,
@@ -46,9 +47,9 @@ header {
 	padding: 0.5rem;
 }
 
-header img {
-	width: 5rem;
-	padding: 1rem;
+#logo {
+    width: 5em;
+    border-radius: 50%;
 }
 
 nav {
@@ -149,4 +150,8 @@ nav a {
 footer{
     background-color: var(--secondary-color);
     border: 1px solid black;
+}
+
+footer a {
+    text-decoration: none;
 }
