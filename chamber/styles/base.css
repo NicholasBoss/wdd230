@@ -153,13 +153,13 @@ nav a {
 #hero {
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
+    position: relative;
 }
 
 #hero-img {
 	width: 100%;
 	grid-column: 1/4;
 	grid-row: 1;
-	position: relative;
 }
 
 .button {
@@ -168,8 +168,8 @@ nav a {
 	grid-row: 1;
 	grid-column: 2/3;
 	position: absolute;
-	top: 50%;
-	left: 30%;
+	top: 40%;
+	left: 20%;
 	padding: 15px;
 	border-radius: 5px;
 }
