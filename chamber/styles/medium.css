@@ -9,8 +9,17 @@
 	    right: 0rem;
     }
 
+    header h1 {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
     #menu{
         display: none;
+    }
+
+    nav{
+        grid-column: 3;
     }
 
     .navigation {
