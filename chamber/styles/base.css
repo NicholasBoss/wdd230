@@ -128,7 +128,7 @@ nav {
 	display: none;
 }
 .navigation li a {
-    color: var(--nav-link-color);
+    color: var(--accent3-color);
 	display: block;
 	padding: 1rem;
 	text-align: center;
@@ -178,7 +178,7 @@ nav {
 }
 
 .join {
-    color: var(--nav-link-color);
+    color: var(--accent3-color);
 	padding: 15px;
 	text-decoration: none;
 }
