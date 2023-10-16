@@ -211,7 +211,7 @@ nav {
 
 footer {
 	background-color: var(--secondary-color);
-	border: 1px solid black;
+	border: 1px solid var(--accent3-color);
 }
 
 footer a {
