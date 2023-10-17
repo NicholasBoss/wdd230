@@ -21,7 +21,7 @@
 	</head>
 	<body>
 		<header>
-			<img src="./images/nicholasboss.jpg" alt="photo of Nicholas Boss">
+			<img src="./images/nicholasboss.webp" alt="photo of Nicholas Boss">
 			<h1>Nicholas Boss</h1>
 		</header>
 		<button class="ham-hide">X</button><button class="menu-show showing">&equiv;</button>
@@ -33,7 +33,14 @@
 			<a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank">Scripture</a>
 		</nav>
 		<main>
-			<h2>WDD 230: Web Frontend Development</h2>
+			<picture>
+				<source media="(max-width: 900px)" srcset="./lesson06/images/portland_temple_small.webp">
+				<source media="(max-width: 100%)" srcset="./lesson06/images/hero_medium.webp">
+				<img src="./lesson06/images/hero_large.webp" alt="Portland Temple Exterior" width="900">
+			</picture>
+			<section class="title">
+				<h2>WDD 230: Web Frontend Development</h2>
+			</section>
 			<section class="card l-activities">
 				<h3>Learning Activities</h3>
 				<ul>
