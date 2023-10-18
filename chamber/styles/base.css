@@ -148,6 +148,10 @@ nav {
 	grid-template-columns: 1fr 3fr 1fr;
     position: relative;
 }
+picture {
+	grid-column: 1/4;
+	width: 100%;
+}
 
 #hero-img {
 	width: 100%;
