@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <script src="./scripts/hamburger-menu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
 </head>
 <body>
     <header>
         <a id="logo-link" href="index.html">
-            <img id="logo" src="./images/logosmall.png" alt="Fairnith Chamber of Commerce Logo">
+            <img id="logo" src="./images/logosmall.webp" alt="Fairnith Chamber of Commerce Logo">
         </a>
         <h1>Fairnith Chamber of Commerce</h1>
         <div id="mode">
@@ -48,10 +49,15 @@
         </nav>
     </header>
     <div id="hero">
-        <picture>
+        <picture >
+            <source media="(min-width: 766px)" srcset="./images/wdd230-org-large.webp">
+            <source media="(min-width: 1200px)" srcset="./images/wdd230-org-medium.webp">
+            <img id="hero-img" src="./images/wdd230-org-small.webp" alt="Temp Image" width="1200" height="800">
+        </picture>
+        <!-- <picture>
             <source media="(max-width: 900px)" srcset="./images/fairnithhero-zoom.webp">
             <img id="hero-img" src="./images/fairnithhero.webp" alt="Image of Fairnith Town Square">
-        </picture>
+        </picture> -->
         <div class="button">
             <a class="join" href="join.html">JOIN NOW</a>
         </div>
@@ -66,7 +72,9 @@
             </section>
             <section class="card weather">
                 <h3>Weather</h3>
-                <p>Cloudy with a chance of rain</p>
+                <p>Temp: <span id="temperature">32</span> &deg;F</p>
+                <p>Wind Speed: <span id="wind-speed">10</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
             </section>
         </div>
         <section class="company">
