@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover what our Chamber is all about.">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="Fairnith Chamber of Commerce - Discover">
+    <meta property="og:description" content="Discover what our Chamber is all about.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nicholasboss.github.io/wdd230/chamber/images/fairnithhero-zoom.webp">
+    <meta property="og:url" content="https://nicholasboss.github.io/wdd230/chamber/discover.html">
+    <link rel="icon" href="favicon.ico">
+    <title>Fairnith Chamber of Commerce - Discover</title>
+    <script src="../scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
+    <!-- <script src="./scripts/windchill.js" defer></script> -->
+    <script src="./scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img id="logo" src="./images/logosmall.webp" alt="Fairnith Chamber of Commerce Logo">
+        </a>
+        <h1>Fairnith Chamber of Commerce</h1>
+        <div id="mode">
+            🕶️
+        </div>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav id="main-nav">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="active" href="#">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="discover-main">
+        <div class="sidebar">
+            <section id="visit-msg" class="card">
+                <h3>Please let us know if you have any questions</h2>
+            </section>
+            <section class="card activity">
+                <h3>Demographics</h2>
+                <p>Population: 205,000</p>
+                <p>Median Age: 305</p>
+                <p>Households: 2534</p>
+            </section>
+        </div>
+        <div class="images">
+            <section class="card">
+                <img src="./images/city-explore.webp" loading="lazy" alt="Photo of the city of Fairnith" height="600">
+                <p>Explore our city</p>
+            </section>
+            <section class="card">
+                <img src="./images/liliana-guide.webp" loading="lazy" alt="Photo of Liliana, our city tour guide" height="600">
+                <p>Take a guided tour with Liliana!</p>
+            </section>
+            <section class="card">
+                <img src="./images/courtyard.webp" loading="lazy" alt="Photo of the castle courtyard" height="600">
+                <p>Enjoy the peaceful courtyard</p>
+            </section>
+            <section class="card">
+                <img src="./images/taverninterior.webp" loading="lazy" alt="Photo of Elendil's Tavern interior" height="600">
+                <p>Take a break at our local tavern</p>
+            </section>
+            <section class="card">
+                <img src="./images/inn-interior.webp" loading="lazy" alt="Photo of Mystic Inn interior" height="600">
+                <p>Stay a night at our 5 star inn</p>
+            </section>
+            <section class="card">
+                <img src="./images/river.webp" loading="lazy" alt="Photo of the Dragon River" height="600">
+                <p>Ride down the Dragon River</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="location">
+                <p>Fairnith Chamber of Commerce - &copy;<span id="currentyear"></span></p>
+                <p>Located at the end of Farseer Ln</p>
+            </div>
+            <div class="contact">
+                <p>Email: fairnith@commerce.org</p>
+                <a href="https://facebook.com">
+                    <img src="./images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <p>Nicholas Boss - WDD 230</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

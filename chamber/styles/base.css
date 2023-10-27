@@ -221,3 +221,31 @@ footer {
 footer a {
 	text-decoration: none;
 }
+
+/* Discover Page */
+
+#discover-main {
+	display: block;
+}
+
+.sidebar {
+	background-color: var(--secondary-color);
+	
+}
+.sidebar section {
+	border: 4px solid black;
+}
+.sidebar .card h3 {
+	padding: 10px;
+}
+
+.images {
+	margin: 10px auto;
+}
+.images .card {
+	padding: 0;
+}
+
+.card img {
+	width: 100%;
+}
