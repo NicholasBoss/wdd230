@@ -11,7 +11,7 @@
         display: flex;
     }
 
-    main h2 {
+    #home-main h2 {
         border-bottom: none;
     }
 

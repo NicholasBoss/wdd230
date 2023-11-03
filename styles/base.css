@@ -16,7 +16,6 @@ body {
 	padding: 0;
 	font-family: var(--paragraph-font);
     max-width: 900px;
-    text-align: center;
 	box-sizing: border-box;
 }
 
@@ -85,7 +84,7 @@ nav a:hover {
 	display: flex;
 }
 
-main {
+#home-main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
