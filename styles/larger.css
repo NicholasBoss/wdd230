@@ -37,4 +37,16 @@
     #google-map {
         width: 800px;
     }
+
+    input {
+        width: 30rem;
+    }
+
+    label {
+        width: 30rem;
+    }
+
+    #slidervalues {
+        width: 31rem;
+    }
 }
