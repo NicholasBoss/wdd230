@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Join">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="Fairnith Chamber of Commerce - Discover">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nicholasboss.github.io/wdd230/chamber/join.html">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Fairnith Chamber of Commerce - Discover</title>
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
+    <script src="../scripts/getdates.js"defer></script>
+    
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img id="logo" src="./images/logosmall.webp" alt="Fairnith Chamber of Commerce Logo">
+        </a>
+        <h1>Fairnith Chamber of Commerce</h1>
+        <div id="mode">
+            🕶️
+        </div>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav id="main-nav">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a id="active" href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="join-main">
+        <div class="form">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <label>First Name*: <input id="fname" name="fname" type="text" required></label>
+                    <label>Last Name*: <input id="lname" name="lname" type="text" required></label>
+                    <label>Title / Position: <input id="title" name="title" type="text" pattern="[a-zA-Z\- ]{7,}"></label>
+                    <label>E-mail*: <input id="email" name="email" type="email" required placeholder="example@email.com"></label>
+                    <label>Phone*: <input id="phone" name="phone" type="tel" required pattern="[\d]{3}-[\d]{3}-[\d]{4}"></label>
+                    <label>Organization Name*: <input id="orgname" name="orgname" type="text" required></label>
+                    <h2>Membership Level</h2>
+                    <label class="memradio"><input name="memlevel" type="radio">NP Membership</label>
+                    <label class="memradio"><input name="memlevel" type="radio">Bronze Membership</label>
+                    <label class="memradio"><input name="memlevel" type="radio">Silver Membership</label>
+                    <label class="memradio"><input name="memlevel" type="radio">Gold Membership</label>
+                    <label>Organization Description: <textarea id="description" name="description" cols="30" rows="5"></textarea></label>
+                    <label><input id="timestamp" name="timestamp" type="hidden" value=""></label>
+                    <button type="submit">Join the Chamber Now!</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="member-info">
+            <section class="card np">
+                <h3>NP Membership</h3>
+                <p>Free</p>
+                <p>Yearly Inspection Needed</p>
+            </section>
+            <section class="card bronze">
+                <h3>Bronze Membership</h3>
+                <p>$50 / Year</p>
+                <p>Access to Chamber Events</p>
+                <p>Inspection Only every 2 Years</p>
+            </section>
+            <section class="card silver">
+                <h3>Silver Membership</h3>
+                <p>$75 / Year</p>
+                <p>VIP Access to Chamber Events</p>
+                <p>Inspection Every 3 Years</p>
+            </section>
+            <section class="card gold">
+                <h3>Gold Membership</h3>
+                <p>$100 / Year</p>
+                <p>50% Discount on First Year Membership</p>
+                <p>No Inspection Needed</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <div class="location">
+                <p>Fairnith Chamber of Commerce - &copy;<span id="currentyear"></span></p>
+                <p>Located at the end of Farseer Ln</p>
+            </div>
+            <div class="contact">
+                <p>Email: fairnith@commerce.org</p>
+                <a href="https://facebook.com">
+                    <img src="./images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <p>Nicholas Boss - WDD 230</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

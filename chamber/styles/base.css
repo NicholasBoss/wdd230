@@ -249,3 +249,51 @@ footer a {
 .card img {
 	width: 100%;
 }
+
+/* Join page */
+
+.form {
+	text-align: left;
+}
+
+input {
+    display: block;
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin: .5rem 0;
+	width: 90%;
+}
+
+
+button {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+input:valid {
+    box-shadow: 3px 3px 3px black;
+}
+
+input:invalid {
+    box-shadow: 3px 3px 3px red;
+}
+label.memradio{
+	display: block;
+	margin-right: .2rem;
+	font-size: 1.4rem;
+	padding-top: .5rem;
+}
+
+label.memradio input{
+	margin-right: 1rem;
+	width: 3%;
+	border-radius: 50%;
+}
