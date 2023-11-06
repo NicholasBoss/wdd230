@@ -278,8 +278,8 @@ button {
     margin: 1rem 0;
 }
 
-input:valid {
-    box-shadow: 3px 3px 3px black;
+.input input:valid {
+    box-shadow: 3px 3px 3px lawngreen;
 }
 
 input:invalid {
