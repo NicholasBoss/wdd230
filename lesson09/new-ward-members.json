@@ -1,0 +1,18 @@
+{
+    "family-name": "Doe",
+    "moved-in-date": "2015-01-01",
+    "number-of-family-members": 2,
+    "visited": true,
+    "members": [
+        {
+            "fname" : "John",
+            "gender" : "Male",
+            "birth-date" : "1980-01-01"
+        },
+        {
+            "fname": "Sue",
+            "gender": "Female",
+            "birth-date": "1985-01-01"
+        }
+    ]
+}
