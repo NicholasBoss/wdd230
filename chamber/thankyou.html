@@ -7,13 +7,60 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <title>Thank you</title>
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="../scripts/main-hamburger-menu.js" defer></script>
     <script src="./scripts/return.js" defer></script>
 </head>
 <body>
+    <header>
+        <a id="logo-link" href="index.html">
+            <img id="logo" src="./images/logosmall.webp" alt="Fairnith Chamber of Commerce Logo">
+        </a>
+        <h1>Fairnith Chamber of Commerce</h1>
+        <div id="mode">
+            🕶️
+        </div>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav id="main-nav">
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a id="active" href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section id="thankyou">
         <img src="./images/fantasylibrary.png" alt="Fairnith Library">
         <h1>Welcome to the Chamber!</h1>
         <p>Page will redirect in <span class="count-down"></span> seconds</p>
     </section>
+    <footer>
+        <div class="info">
+            <div class="location">
+                <p>Fairnith Chamber of Commerce - &copy;<span id="currentyear"></span></p>
+                <p>Located at the end of Farseer Ln</p>
+            </div>
+            <div class="contact">
+                <p>Email: fairnith@commerce.org</p>
+                <a href="https://facebook.com">
+                    <img src="./images/facebook.png" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <p>Nicholas Boss - WDD 230</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
 </body>
 </html>

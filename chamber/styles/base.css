@@ -252,6 +252,10 @@ footer a {
 
 /* Join page */
 
+#join-main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
 .form {
 	text-align: left;
 }

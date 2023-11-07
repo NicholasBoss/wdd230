@@ -105,10 +105,6 @@
     }
 
     /* Join Page */
-    #join-main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .form{
         margin: 0 auto;
     }
