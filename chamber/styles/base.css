@@ -297,3 +297,25 @@ label.memradio input{
 	width: 3%;
 	border-radius: 50%;
 }
+
+/* Thank You Page */
+
+#thankyou {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#thankyou h1, #thankyou p{
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+}
+#thankyou p {
+	top: 35%;
+	left: 37%;
+}
+#thankyou img {
+	z-index: -1;
+}
