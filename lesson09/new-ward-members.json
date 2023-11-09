@@ -1,18 +1,23 @@
 {
-    "family-name": "Doe",
-    "moved-in-date": "2015-01-01",
-    "number-of-family-members": 2,
-    "visited": true,
-    "members": [
+    "name":"Boss",
+    "moveInDate":"2002/02/02",
+    "familySize":3,
+    "visited":false,
+    "members":[
         {
-            "fname" : "John",
-            "gender" : "Male",
-            "birth-date" : "1980-01-01"
+            "name":"Nicholas",
+            "gender":"M",
+            "birthdate":"2001/01/01"
         },
         {
-            "fname": "Sue",
-            "gender": "Female",
-            "birth-date": "1985-01-01"
+            "name":"Jill",
+            "gender":"F",
+            "birthdate":"1900/01/01"
+        },
+        {
+            "name":"Bret",
+            "gender":"M",
+            "birthdate":"1901/01/01"
         }
     ]
 }
