@@ -4,40 +4,40 @@
             "name": "Elendil's Tavern",
             "address": "123 Main St",
             "phone": "992-872-2254",
-            "website": "http://www.elendilstavern.com",
-            "image": "./images/tavern.webp",
+            "website": "https://www.elendilstavern.com",
+            "imageurl": "./images/tavern.webp",
             "membership": "Gold"
         },
         {
             "name": "The Dragon Blacksmith",
             "address": "736 Main St",
             "phone": "992-865-8748",
-            "website": "http://www.dragonblacksmith.com",
-            "image": "./images/dragonblacksmith.webp",
+            "website": "https://www.dragonblacksmith.com",
+            "imageurl": "./images/dragonblacksmith.webp",
             "membership": "Silver"
         },
         {
             "name": "The Mystic Inn",
             "address": "489 Central Ave",
             "phone": "992-653-9578",
-            "website": "http://www.mysticinn.com",
-            "image": "./images/inn.webp",
+            "website": "https://www.mysticinn.com",
+            "imageurl": "./images/inn.webp",
             "membership": "Silver"
         },
         {
             "name": "Dragon River Rides",
             "address": "446 River Rd",
             "phone": "992-657-9599",
-            "website": "http://www.dragonriverrides.com",
-            "image": "./images/river.webp",
+            "website": "https://www.dragonriverrides.com",
+            "imageurl": "./images/river.webp",
             "membership": "Bronze"
         },
         {
             "name": "Fairnith Tours",
             "address": "340 Main St",
             "phone": "992-623-9500",
-            "website": "http://www.fairnithtours.com",
-            "image": "./images/liliana-guide.webp",
+            "website": "https://www.fairnithtours.com",
+            "imageurl": "./images/liliana-guide.webp",
             "membership": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "1700 Main St",
             "phone": "992-357-7600",
             "website": "http://www.fairnithacademy.com",
-            "image": "./images/school.webp",
+            "imageurl": "./images/school.webp",
             "membership": "Gold"
         },
         {
@@ -53,7 +53,7 @@
             "address": "1343 Main St",
             "phone": "992-665-8756",
             "website": "http://www.fairnithtours.com",
-            "image": "./images/market.webp",
+            "imageurl": "./images/market.webp",
             "membership": "Silver"
         }
     ]
