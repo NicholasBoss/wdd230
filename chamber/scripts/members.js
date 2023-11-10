@@ -40,7 +40,7 @@ function displayMembers(members){
             <p>Phone: ${member.phone}</p>
             <p>Website: <a href="${member.website}">${member.name}</a></p>
             <p>Membership Level: ${member.membership}</p>
-            <img src="${member.imageurl}" "height="440" width="340" loading="lazy" alt="Picture of ${member.name}">`
+            <img src="${member.imageurl}" "height="200" width="200" loading="lazy" alt="Picture of ${member.name}">`
         section.innerHTML = sectionHTML;
         cards.appendChild(section);
     });
