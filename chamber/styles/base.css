@@ -250,6 +250,10 @@ footer a {
 	width: 100%;
 }
 
+.card img:hover {
+	opacity: 50%;
+}
+
 /* Join page */
 
 #join-main {
@@ -338,6 +342,12 @@ label.memradio input{
 }
 
 .active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+#list:hover, #grid:hover {
 	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	font-weight: 700;
