@@ -33,7 +33,7 @@ const cards = document.querySelector('.cards');
 function displayMembers(members){
     members.forEach((member) => {
         let section = document.createElement('section')
-        section.classList.add("card")
+        section.classList.add("directory-card")
         section.classList.add("grid")
         let sectionHTML = `<h3>${member.name}</h3>
             <p>Address: ${member.address}</p>
