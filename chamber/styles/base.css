@@ -358,7 +358,8 @@ label.memradio input{
 .list section {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
-	
+	justify-content: center;
+	align-content: center;
 }
 
 .list .card {
@@ -367,4 +368,9 @@ label.memradio input{
 
 .list section img {
 	display: none;
+}
+
+.list section h3 {
+	height: 100%;
+	padding-top: 50%;
 }
