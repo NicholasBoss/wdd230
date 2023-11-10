@@ -20,6 +20,7 @@ modeButton.addEventListener("click", () => {
         document.documentElement.style.setProperty('--accent3-color', '#000');
         document.documentElement.style.setProperty('--secondary-color', '#D5A021');
         document.documentElement.style.setProperty('--ham-color', '#d5a021');
+        body.style.background = "#fff";
 		main.style.color = "#000";
 		modeButton.textContent = "🕶️";
 	}

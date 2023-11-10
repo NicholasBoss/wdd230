@@ -29,7 +29,7 @@
             "address": "446 River Rd",
             "phone": "992-657-9599",
             "website": "https://www.dragonriverrides.com",
-            "imageurl": "./images/river.webp",
+            "imageurl": "./images/riversmall.webp",
             "membership": "Bronze"
         },
         {
@@ -37,7 +37,7 @@
             "address": "340 Main St",
             "phone": "992-623-9500",
             "website": "https://www.fairnithtours.com",
-            "imageurl": "./images/liliana-guide.webp",
+            "imageurl": "./images/liliana-guide-small.webp",
             "membership": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "1700 Main St",
             "phone": "992-357-7600",
             "website": "http://www.fairnithacademy.com",
-            "imageurl": "./images/school.webp",
+            "imageurl": "./images/school-small.webp",
             "membership": "Gold"
         },
         {
@@ -53,7 +53,7 @@
             "address": "1343 Main St",
             "phone": "992-665-8756",
             "website": "http://www.fairnithtours.com",
-            "imageurl": "./images/market.webp",
+            "imageurl": "./images/market-small.webp",
             "membership": "Silver"
         }
     ]

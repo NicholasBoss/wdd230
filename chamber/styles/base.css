@@ -323,3 +323,48 @@ label.memradio input{
 #thankyou img {
 	z-index: -1;
 }
+
+/* Directory Page (Need to add specific CSS for .grid and .list. Create the switch capability in members.js*/
+
+.cards section {
+	max-width: 340px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.active {
+	color: black;
+	background-color: var(--accent2-color);
+}
+
+.active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+.grid {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap: 5px;
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+	
+}
+
+.list .card {
+	max-width: 1200px;
+}
+
+.list section img {
+	display: none;
+}
