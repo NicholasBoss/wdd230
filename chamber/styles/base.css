@@ -321,6 +321,18 @@ label.memradio input{
 	border-radius: 50%;
 }
 
+.join-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.join-card h2,
+.join-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
 /* Thank You Page */
 
 #thankyou {
