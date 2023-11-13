@@ -111,4 +111,9 @@
     .member-info{
         margin: 10px auto;
     }    
+
+    /* Directory Page */
+    .list .directory-card {
+        max-width: 1200px;
+    }
 }
