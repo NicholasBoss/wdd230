@@ -112,6 +112,17 @@
         margin: 10px auto;
     }    
 
+    /* Thank You Page */
+    #thankyou h1, #thankyou p{
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+    #thankyou p {
+        top: 30%;
+        left: 37%;
+    }
     /* Directory Page */
     .list .directory-card {
         max-width: 1200px;

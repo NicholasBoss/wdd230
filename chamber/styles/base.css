@@ -345,11 +345,11 @@ label.memradio input{
 	color: white;
 	position: absolute;
 	top: 25%;
-	left: 35%;
+	left: 15%;
 }
 #thankyou p {
-	top: 35%;
-	left: 37%;
+	top: 37%;
+	left: 20%;
 }
 #thankyou img {
 	z-index: -1;
