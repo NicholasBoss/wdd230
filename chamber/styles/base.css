@@ -406,6 +406,7 @@ label.memradio input{
 .list {
 	display: flex;
 	flex-direction: column;
+	
 }
 
 .list section {
@@ -413,6 +414,7 @@ label.memradio input{
 	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
 	justify-content: center;
 	align-content: center;
+	max-width: 900px;
 }
 
 .list .directory-card {
