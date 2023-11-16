@@ -8,9 +8,8 @@ exit.addEventListener('click', () => {
 
 function showBanner() {
     const day = new Date().getDay();
-    if (day == 1 || day == 2 || day == 3) {
+    if (day == 1 || day == 2 || day == 4) {
         banner.style.display = 'block';
-        document.body.classList.add('move-down')
     }
 }
 
