@@ -406,7 +406,7 @@ label.memradio input{
 .list {
 	display: flex;
 	flex-direction: column;
-	
+	font-size: .8em;
 }
 
 .list section {
