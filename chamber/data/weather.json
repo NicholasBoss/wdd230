@@ -1,0 +1,35 @@
+{
+	"coord": { "lon": -0.0746, "lat": 51.5187 },
+	"weather": [
+		{
+			"id": 803,
+			"main": "Clouds",
+			"description": "broken clouds",
+			"icon": "04n"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": 45.52,
+		"feels_like": 41.29,
+		"temp_min": 43.48,
+		"temp_max": 47.17,
+		"pressure": 1014,
+		"humidity": 89
+	},
+	"visibility": 9000,
+	"wind": { "speed": 8.05, "deg": 290 },
+	"clouds": { "all": 75 },
+	"dt": 1700161331,
+	"sys": {
+		"type": 2,
+		"id": 2075535,
+		"country": "GB",
+		"sunrise": 1700119168,
+		"sunset": 1700151046
+	},
+	"timezone": 0,
+	"id": 2637221,
+	"name": "Spitalfields",
+	"cod": 200
+}

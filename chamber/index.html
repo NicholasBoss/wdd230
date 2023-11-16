@@ -18,10 +18,13 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <script src="./scripts/hamburger-menu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/banner.js" defer></script>
 </head>
 <body>
+    <div id="banner">Please come to our Meet and Greet this Wednesday at 7PM! <button id="exit"></button></div>
     <header>
         <a id="logo-link" href="index.html">
             <img id="logo" src="./images/logosmall.webp" alt="Fairnith Chamber of Commerce Logo">
@@ -71,10 +74,39 @@
                 <p>Come join us to commemorate the establishment of the new Chamber of Commerce</p>
             </section>
             <section class="home-card weather">
-                <h3>Weather</h3>
-                <p>Temp: <span id="temperature">32</span> &deg;F</p>
-                <p>Wind Speed: <span id="wind-speed">10</span> mph</p>
+                <h3>Current Weather</h3>
+                <p>Fairnith</p>
+                <p id="date"></p>
+                <p><img id="weather-icon" src="#" alt="weather icon"></p>
+                <p id="weather-desc"></p>
+                <p>Temp: <span id="temperature"></span> &deg;F</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
                 <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
+				<p id="weather-temp"></p>
+                
+            </section>
+            <section class="home-card forcast">
+                <h3>Three Day Forcast</h3>
+                <div id="forcast">
+                    <div class="day-card">
+                        <p id="forcast-date1"></p>
+                        <p><img id="forcast-icon1" src="#" alt="forcast icon"></p>
+                        <p id="forcast-desc1"></p>
+                        <p id="forcast-temp1"></p>
+                    </div>
+                    <div class="day-card">
+                        <p id="forcast-date2"></p>
+                        <p><img id="forcast-icon2" src="#" alt="forcast icon"></p>
+                        <p id="forcast-desc2"></p>
+                        <p id="forcast-temp2"></p>
+                    </div>
+                    <div class="day-card">
+                        <p id="forcast-date3"></p>
+                        <p><img id="forcast-icon3" src="#" alt="forcast icon"></p>
+                        <p id="forcast-desc3"></p>
+                        <p id="forcast-temp3"></p>
+                    </div>
+                </div>
             </section>
         </div>
         <section class="company">

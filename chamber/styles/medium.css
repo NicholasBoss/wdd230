@@ -42,12 +42,8 @@
     
     .main-info, .company{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         column-gap: 2%;
-    }
-
-    .weather{
-        grid-column: 2;
     }
 
     .company h2{
