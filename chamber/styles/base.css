@@ -256,6 +256,7 @@ footer a {
 	margin: 0;
 }
 
+
 .sidebar {
 	background-color: var(--secondary-color);
 	
@@ -388,6 +389,10 @@ label.memradio input{
 
 .directory-card img {
 	width: 100%;
+}
+
+.directory-card p a {
+	color: var(--nav-link-color)
 }
 
 .cards section {
