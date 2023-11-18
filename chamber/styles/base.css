@@ -220,14 +220,15 @@ picture {
 	margin: 0;
 }
 
+.contact a {
+	color: var(--nav-link-color);
+	text-decoration: underline;
+}
+
 .day-card {
 	border-right: none;
 	border-left: none;
 	border-bottom: none;
-}
-
-.contact a{
-    text-decoration: none;
 }
 
 footer {
