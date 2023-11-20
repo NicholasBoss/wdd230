@@ -1,5 +1,5 @@
 const returnButton = document.querySelector('#return-button');
 
 returnButton.addEventListener('click', () => {
-    window.history.back();
+    window.location.href = './chamber/index.html';
 });
