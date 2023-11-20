@@ -452,3 +452,12 @@ label.memradio input{
 	height: 100%;
 	padding-top: 50%;
 }
+
+/* 404 Error Page */
+
+.error-card {
+	margin-top: 3%;
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
