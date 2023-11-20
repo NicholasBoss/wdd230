@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap");
+:root {
+	/* change the values below to your colors from your palette */
+	--primary-color: #87f1ff;
+	--secondary-color: #d5a021;
+	--accent1-color: #841d8c;
+	--accent2-color: beige;
+	--accent3-color: black;
+    --border-color: #d5a021;
+    --ham-color: #d5a021;
+
+	/* change the values below to your chosen font(s) */
+	--heading-font: "Dancing Script", sans-serif;
+	--paragraph-font: "EB Garamond", Helvetica, sans-serif;
+
+	/* these colors below should be chosen from among your palette colors above */
+	--headline-color-on-white: #396e94; /* headlines on a white background */
+	--headline-color-on-color: white; /* headlines on a colored background */
+	--paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+	--paragraph-color-on-color: white; /* paragraph text on a colored background */
+	--paragraph-background-color: #396e94;
+	--paragraph-background-color-alt: beige;
+	--nav-link-color: black;
+	--nav-background-color: var(--secondary-color);
+	--nav-hover-link-color: var(--accent1-color);
+	--nav-hover-background-color: var(--primary-color);
+}
+
+body {
+	margin: 0 auto;
+	font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+	max-width: 1000px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+	color: var(--accent3-color);
+}
+
+#banner {
+	background-color: var(--paragraph-background-color-alt);
+	color: var(--accent1-color);
+    padding: .5em;
+	display: none;
+}
+
+#exit::before {
+	content: "X";
+}
+
+header {
+    border-bottom: 1px solid var(--accent3-color);
+	background-color: var(--secondary-color);
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-items: center;
+	padding: 0.5rem;
+}
+
+#logo {
+	margin-top: 15%;
+	width: 10em;
+    grid-row: 1;
+}
+
+header h1 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#mode {
+	position: absolute;
+	top: 4rem;
+	right: 0.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+nav {
+	background-color: var(--nav-background-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.navigation li a:hover,
+#active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+#active {
+	color: black;
+	background-color: var(--primary-color);
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 3px 7px 6px;
+	background-color: var(--ham-color);
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+    color: var(--accent3-color);
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li:first-of-type {
+	margin-top: 90px;
+}
+.open li {
+	display: block;
+	width: 100%;
+    grid-row: 1/3;
+}
+.open li a {
+	display: block;
+    grid-row: 1/3;
+}
+
+#hero {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+    position: relative;
+}
+picture {
+	grid-column: 1/4;
+	width: 100%;
+}
+
+#hero-img {
+	width: 100%;
+	grid-column: 1/4;
+	grid-row: 1;
+}
+
+.button {
+	background-color: var(--nav-background-color);
+	
+	grid-row: 1;
+	grid-column: 2/3;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	border-radius: 5px;
+	width: 75%;
+}
+.button:hover {
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+}
+
+.join {
+    color: var(--accent3-color);
+	padding: 15px;
+	text-decoration: none;
+}
+
+.join:hover {
+	color: var(--nav-hover-link-color);
+	font-weight: 600;
+}
+
+.main-info {
+	text-align: center;
+	margin: 0 auto;
+    padding-top: 1%;
+}
+
+.home-card, .day-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.home-card h2,
+.home-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+.contact a {
+	color: var(--nav-link-color);
+	text-decoration: underline;
+}
+
+.day-card {
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+}
+
+footer {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--accent3-color);
+}
+
+footer a {
+	text-decoration: none;
+}
+
+/* Discover Page */
+
+#discover-main {
+	display: block;
+}
+.discover-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.discover-card h2,
+.discover-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+
+.sidebar {
+	background-color: var(--secondary-color);
+	
+}
+.sidebar section {
+	border: 1px solid var(--accent3-color);
+}
+.sidebar .discover-card h2 {
+	padding: 10px;
+}
+
+.images {
+	margin: 10px auto;
+}
+.images .discover-card {
+	padding: 0;
+}
+
+.discover-card img {
+	width: 100%;
+}
+
+.discover-card img:hover {
+	opacity: 50%;
+}
+
+.activity {
+	margin-top: 10px;
+}
+
+/* Join page */
+
+#join-main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.form {
+	text-align: left;
+}
+
+.input input {
+    display: block;
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin: .5rem 0;
+	width: 90%;
+}
+
+
+button {
+    font-size: 1.5rem;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.input input:valid {
+    box-shadow: 3px 3px 3px lawngreen;
+}
+
+input:invalid {
+    box-shadow: 3px 3px 3px red;
+}
+label.memradio{
+	display: block;
+	margin-right: .2rem;
+	font-size: 1.4rem;
+	padding-top: .5rem;
+}
+
+label.memradio input{
+	margin-right: 1rem;
+	width: 3%;
+	border-radius: 50%;
+}
+
+.join-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.join-card h2,
+.join-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+/* Thank You Page */
+
+#thankyou {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#thankyou h1, #thankyou p{
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+}
+#thankyou p {
+	top: 37%;
+	left: 20%;
+}
+#thankyou img {
+	z-index: -1;
+	width: 100%;
+}
+
+/* Directory Page */
+.directory-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.directory-card h2,
+.directory-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+.directory-card img {
+	width: 100%;
+}
+
+.directory-card p a {
+	color: var(--nav-link-color)
+}
+
+.cards section {
+	max-width: 340px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.active {
+	color: black;
+	background-color: var(--accent2-color);
+}
+
+.active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+#list:hover, #grid:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+.grid {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap: 5px;
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	font-size: .8em;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+	justify-content: center;
+	align-content: center;
+	max-width: 900px;
+}
+
+.list .directory-card {
+	max-width: 100%;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section h3 {
+	height: 100%;
+	padding-top: 50%;
+}
+
+/* 404 Error Page */
+
+.error-card {
+	margin-top: 3%;
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
