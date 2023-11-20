@@ -18,6 +18,7 @@
     <title>Chamber Directory</title>
     <script src="./scripts/hamburger-menu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/search.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <script src="./scripts/members.js" defer></script>
 </head>
@@ -30,6 +31,18 @@
         <div id="mode">
             🕶️
         </div>
+        <div id="search">
+            🔎
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search Site</button>
+              </form>
+            </div>
+          </div>
         <button id="menu" aria-label="hamburger-menu"></button>
         <nav id="main-nav">
             <ul class="navigation">
