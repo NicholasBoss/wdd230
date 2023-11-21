@@ -379,6 +379,11 @@ footer a {
 	text-align: left; 
 }
 
+fieldset {
+	max-width: 340px;
+	margin: 0;
+}
+
 .input input {
     display: block;
     padding: .5rem;
