@@ -300,6 +300,10 @@ picture {
 
 .contact a {
 	color: var(--nav-link-color);
+	text-decoration: underline;
+}
+
+.footer-contact {
 	text-decoration: none;
 }
 
