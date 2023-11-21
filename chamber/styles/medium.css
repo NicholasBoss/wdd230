@@ -136,4 +136,13 @@
     .list .directory-card {
         max-width: 1000px;
     }
+
+    /* Error Page */
+    .first {
+        display: inline;
+    }
+
+    .error-card {
+        max-width: 340px;
+    }
 }
