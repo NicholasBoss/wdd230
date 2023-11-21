@@ -16,7 +16,6 @@ function displayForecast(forecastData){
         nextdate = mydate.toISOString().slice(0, 10)
         dates.push(nextdate)
     }
-    console.log(dates)
     // Find the object with the highest temperature for each day
     highTemps = dates.map((date) => forecastData
         .filter(x => x.dt_txt.startsWith(date))
@@ -27,8 +26,6 @@ function displayForecast(forecastData){
         .filter(x => x.dt_txt.startsWith(date))
         .reduce((prev, next) => prev.main.temp < next.main.temp ? prev : next)        
     )    
-    console.log(highTemps)
-    console.log(lowTemps)
     // Add the forecast information to the HTML document
     weatherElt = document.querySelector("body .forecast .days")
 
