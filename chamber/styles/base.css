@@ -457,6 +457,28 @@ label.memradio input{
 	width: 100%;
 }
 
+/* Search Thank you page */
+#searchthankyou {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#searchthankyou h1, #searchthankyou p{
+	color: white;
+	position: absolute;
+	top: 25%;
+}
+#searchthankyou p {
+	top: 40%;
+	left: 20%;
+}
+
+#searchthankyou img {
+	z-index: -1;
+	width: 100%;
+}
+
 /* Directory Page */
 .directory-card {
 	border: 4px solid var(--border-color);

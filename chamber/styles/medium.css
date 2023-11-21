@@ -132,6 +132,19 @@
         top: 30%;
         left: 37%;
     }
+
+    /* Search Thank you page */
+    #searchthankyou h1, #searchthankyou p{
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 27%;
+    }
+    #searchthankyou p {
+        top: 30%;
+        left: 37%;
+    }
+
     /* Directory Page */
     .list .directory-card {
         max-width: 1000px;
