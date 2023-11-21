@@ -18,7 +18,7 @@ modeButton.addEventListener("click", () => {
         });
 		modeButton.textContent = "🔆";
 	} else {
-		main.style.background = "#eee";
+		main.style.background = "#fff";
         document.documentElement.style.setProperty('--accent3-color', '#000');
         document.documentElement.style.setProperty('--secondary-color', '#D5A021');
         document.documentElement.style.setProperty('--ham-color', '#d5a021');
