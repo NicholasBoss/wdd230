@@ -373,7 +373,7 @@ footer a {
 
 #join-main {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 .form {
 	text-align: left; 
