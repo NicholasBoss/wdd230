@@ -300,7 +300,7 @@ picture {
 
 .contact a {
 	color: var(--nav-link-color);
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .day-card {
